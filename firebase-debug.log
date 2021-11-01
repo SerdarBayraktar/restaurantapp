@@ -1,0 +1,172 @@
+[debug] [2021-11-01T07:32:37.622Z] ----------------------------------------------------------------------
+[debug] [2021-11-01T07:32:37.626Z] Command:       /usr/local/Cellar/node/17.0.1/bin/node /usr/local/bin/firebase deploy --only hosting:restaurant-1b
+[debug] [2021-11-01T07:32:37.626Z] CLI Version:   9.21.0
+[debug] [2021-11-01T07:32:37.626Z] Platform:      darwin
+[debug] [2021-11-01T07:32:37.627Z] Node Version:  v17.0.1
+[debug] [2021-11-01T07:32:37.629Z] Time:          Mon Nov 01 2021 10:32:37 GMT+0300 (GMT+03:00)
+[debug] [2021-11-01T07:32:37.629Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-01T07:32:37.697Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-01T07:32:37.697Z] > authorizing via signed-in user (serdarbayraktar03@gmail.com)
+[debug] [2021-11-01T07:32:37.697Z] [iam] checking project nene-51a1d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-01T07:32:37.700Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-01T07:32:37.700Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-01T07:32:38.067Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 01 Nov 2021 07:32:38 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T07:32:38.119Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nene-51a1d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-11-01T07:32:39.602Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 07:32:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=759","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T07:32:39.604Z] > refreshing access token with scopes: []
+[debug] [2021-11-01T07:32:39.605Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-01T07:32:39.958Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 01 Nov 2021 07:32:39 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T07:32:40.015Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nene-51a1d [none]
+[debug] [2021-11-01T07:32:40.535Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nene-51a1d 200
+[debug] [2021-11-01T07:32:40.536Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nene-51a1d {"projectId":"nene-51a1d","projectNumber":"397479946238","displayName":"NENE","name":"projects/nene-51a1d","resources":{"hostingSite":"nene-51a1d","storageBucket":"nene-51a1d.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'nene-51a1d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-11-01T07:32:40.542Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-01T07:32:40.542Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-01T07:32:40.928Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 01 Nov 2021 07:32:40 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T07:32:40.981Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/restaurant-1b/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-11-01T07:32:42.360Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 01 Nov 2021 07:32:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T07:32:42.361Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-11-01T07:32:42.659Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 01 Nov 2021 07:32:42 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/restaurant-1b/versions",
+        "path": "/v1beta1/sites/restaurant-1b/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/restaurant-1b/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2021-11-01T08:16:56.419Z] ----------------------------------------------------------------------
+[debug] [2021-11-01T08:16:56.422Z] Command:       /usr/local/Cellar/node/17.0.1/bin/node /usr/local/bin/firebase deploy --only hosting:restaurant-1b
+[debug] [2021-11-01T08:16:56.422Z] CLI Version:   9.21.0
+[debug] [2021-11-01T08:16:56.423Z] Platform:      darwin
+[debug] [2021-11-01T08:16:56.423Z] Node Version:  v17.0.1
+[debug] [2021-11-01T08:16:56.425Z] Time:          Mon Nov 01 2021 11:16:56 GMT+0300 (GMT+03:00)
+[debug] [2021-11-01T08:16:56.425Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-01T08:16:56.488Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-01T08:16:56.489Z] > authorizing via signed-in user (serdarbayraktar03@gmail.com)
+[debug] [2021-11-01T08:16:56.489Z] [iam] checking project nene-51a1d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-01T08:16:56.491Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nene-51a1d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-11-01T08:16:57.714Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 08:16:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=767","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T08:16:57.718Z] > refreshing access token with scopes: []
+[debug] [2021-11-01T08:16:57.719Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-01T08:16:58.070Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 01 Nov 2021 08:16:58 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T08:16:58.127Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nene-51a1d [none]
+[debug] [2021-11-01T08:16:58.623Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nene-51a1d 200
+[debug] [2021-11-01T08:16:58.623Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nene-51a1d {"projectId":"nene-51a1d","projectNumber":"397479946238","displayName":"NENE","name":"projects/nene-51a1d","resources":{"hostingSite":"nene-51a1d","storageBucket":"nene-51a1d.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'nene-51a1d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-11-01T08:16:58.629Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-01T08:16:58.629Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-01T08:16:58.928Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 01 Nov 2021 08:16:59 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T08:16:58.984Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/restaurant-1b/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-11-01T08:17:00.391Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 01 Nov 2021 08:17:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-01T08:17:00.391Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2021-11-01T08:17:00.727Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 01 Nov 2021 08:17:00 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/restaurant-1b/versions",
+        "path": "/v1beta1/sites/restaurant-1b/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/restaurant-1b/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
